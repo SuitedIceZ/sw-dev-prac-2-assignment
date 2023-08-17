@@ -47,3 +47,18 @@ form {
   padding: 20px;
   border-radius: 10px;
 }
+
+.small_image_box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.small_image_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
