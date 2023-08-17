@@ -3,53 +3,57 @@
   <head>
     <title>Pet product fair</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="register.js"></script>
   </head>
   <body>
     <div class="page">
       <h1>Pet product fair</h1>
       <h3>company register</h3>
       <form>
-        <label for="company_name">Company name</label>
+        <label for="companyName">Company name</label>
         <input
           type="text"
-          id="company_name"
-          name="company_name"
+          id="companyName"
+          name="companyName"
           placeholder="company name"
         />
         <div>
-          <label for="booth_size">Select booth size</label>
-          <select id="booth_size" name="booth_size">
+          <label for="boothSize">select booth size</label>
+          <select id="boothSize" name="boothSize" required>
             <option value="10x10" selected>10x10</option>
             <option value="10x15" selected>10x15</option>
+            <option value="" disabled selected>Select a booth size</option>
           </select>
         </div>
         <div>
-          <label for="need_table">need table?</label>
-          <input type="checkbox" id="need_table" name="need_table" />
+          <label for="needTable">need table?</label>
+          <input type="checkbox" id="needTable" name="needTable" />
         </div>
-        <label for="table_amount">table amount (1-10)</label>
+        <label for="tableAmount">table amount (1-10)</label>
         <input
           type="number"
-          id="table_amount"
-          name="table_amount"
+          id="tableAmount"
+          name="tableAmount"
           placeholder="1-10"
         />
-        <label for="contact_name">Contact name</label>
+        <label for="contactName">Contact name</label>
         <input
           type="text"
-          id="contact_name"
-          name="contact_name"
+          id="contactName"
+          name="contactName"
           placeholder="contact name"
         />
-        <label for="contact_number">contact number</label>
+        <label for="contactNumber">contact number</label>
         <input
           type="text"
-          id="contact_number"
-          name="contact_number"
+          id="contactNumber"
+          name="contactNumber"
           placeholder="contact number"
         />
-        <button type="submit" class="btn">Submit</button>
       </form>
+      <button type="submit" class="btn" onclick="onClickSubmit();">
+        Submit
+      </button>
     </div>
   </body>
 </html>
